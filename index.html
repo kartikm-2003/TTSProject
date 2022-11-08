@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="icons/favicon.png" type="image/x-icon">
+    <title>Text-To-Speech</title>
+</head>
+
+<body onload="textToAudio()">
+    <header>
+        <div class="header-item">
+            <img src="icons/favicon.png" align="left">
+            <h1><center>Text To Speech (TTS)</h1></center>
+        </div>
+    </header><br>
+     <div class="message">
+        <h1 id="mssg1">An easy way to convert text to voice that’s fast and straightforward – it’ll make your message more catchy and inclusive.
+        </h1><br>
+        <b><h2 id="mssg2">Text-to-Speech Technology: What It Is and How It Works</h1></b><br>
+        <p id="mssg">Text-to-speech (TTS) is a type of assistive technology that reads digital text aloud. It’s sometimes called “read aloud” technology. 
+            TTS can take words on a computer or other digital device and convert them into audio. 
+            TTS is very helpful for kids who struggle with reading, but it can also help kids with writing and editing, and even focusing.<br><br>The technology behind text-to-speech has evolved over the last few decades.
+             Using deep learning, it is now possible to produce very natural-sounding speech that includes changes to pitch, rate, pronunciation, and inflection. 
+             Today, computer-generated speech is used in a variety of use cases and is turning into a ubiquitous element of user interfaces. 
+             Newsreaders, gaming, public announcement systems, e-learning, telephony, IoT apps & devices and personal assistants are just a few starting points.</p>
+     </div>
+
+    <main>
+        <div class="container">
+            <div class="form">
+                <div>
+                    <h2>Select Voice:</h2>
+                    <select id="voices" class="form-select bg-secondary text-light"></select>
+                </div>
+
+                <div>
+                    <h2>Enter your text here: </h2>
+                    <textarea id="input-text" placeholder="Enter Text" cols="40%" rows="11%"></textarea>
+
+                </div>
+            </div>
+
+            <div>
+                <div>
+                    <h2>Volume</h2>
+                    <input type="range" min="1" max="10" value="5" id="volumeRange">
+                </div>
+
+                <div>
+                    <h2>Rate</h2>
+                    <input type="range" min="1" max="10" value="5" id="rateRange">
+                </div>
+
+                <div>
+                    <h2>Pitch</h2>
+                    <input type="range" min="1" max="20" value="10" id="pitchRange">
+                </div>
+
+                <div>
+                    <button onclick="textToAudio()">Speech</button>
+                    <button onclick="reset()">Reset</button>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <ul>
+            <h3>Contact</h3>
+            <li>
+                <a href="https://twitter.com/kartikmittal199">
+                    <img src="icons/Twitter social icons - circle - white.png" class="social-icon" />
+                    <p>Twitter</p>
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/kartikm-2003">
+                    <img src="icons/GitHub-Mark-light-32px.png" class="social-icon" />
+                    <p>Github</p>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/kartikmittall/">
+                    <img src="icons/icons8-instagram-24.png" class="social-icon">
+                <p>Instagram</p>
+                </a>
+            </li>
+        </ul>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
